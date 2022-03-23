@@ -130,6 +130,9 @@ const getanswer=()=>{
         }
     });
     return selectedAnswer;
+};
+const removeSelect=()=>{
+    answers.forEach((ans)=>ans.checked=false);
 }
 
 submit.addEventListener("click",()=>{
@@ -141,6 +144,7 @@ submit.addEventListener("click",()=>{
         // console.log(score);
     };
     questionNumber++;
+    removeSelect();
     if(questionNumber<quizData.length){
         loadquestions();
     }
@@ -150,6 +154,7 @@ submit.addEventListener("click",()=>{
         document.getElementById("per").innerText=`percentages ${(score/10)*100}%`;
         document.getElementById("main").style.display="none";
         document.getElementById("result").style.display="block";
+        document.getElementById("Reload").innerHTML=`<button class="reload-btn" onclick="location.reload()">Reload</button>`;
     }
 });
 

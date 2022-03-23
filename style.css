@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Oswald:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .main-div {
-    width: 600px;
+    width: 750px;
     /* height: 400px; */
     /* background-color: aquamarine; */
     background-color: rgb(247, 247, 252);
@@ -8,6 +16,7 @@
     padding-bottom: 50px;
     box-shadow: 10px 10px 10px rgb(150, 146, 146);
     /* display: none; */
+    
 }
 
 .head-part {
@@ -19,25 +28,30 @@
 
 .time-left,
 .question-attempt {
-    background-color: rgb(39, 201, 207);
+    background-color: rgb(241, 58, 34);
     padding: 7px 30px;
     border-radius: 7px;
+    color: white;
 }
 
 .centre {
-    width: 400px;
-    /* background-color: rgb(247, 247, 252);  */
+    width: 600px;
+    background-color: rgb(129, 129, 192); 
     margin: auto;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
 }
 
 .btn {
     padding: 10px 30px;
     background-color: rgb(0, 153, 255);
     border-radius: 5px;
-    width: 100px;
-    margin-left: 40%;
+    width: 200px;
+    margin-left: 35%;
     border: none;
 
 }
@@ -45,8 +59,18 @@
 .btn:hover {
     cursor: pointer;
 }
+input{
+    margin-top: 10px;
+}
+label{
+    font-size: 20px;
+    padding: 0px 40px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: rgb(155, 253, 253);
+}
 
-input:hover {
+input:hover{
     cursor: pointer;
 }
 .result-section{
@@ -56,8 +80,22 @@ input:hover {
     background-color: rgb(247, 247, 252);
     margin: auto;
     margin-top: 100px;
-    padding-bottom: 50px;
+    padding: 100px;
     box-shadow: 10px 10px 10px rgb(150, 146, 146);
     text-align: center;
     display: none;
+}
+.reload-btn{
+    display: inline-block;
+    background-color: green;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+#question{
+    color: white;
+    font-family: 'Lora', serif;
+
 }
